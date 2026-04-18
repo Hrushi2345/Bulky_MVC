@@ -8,8 +8,10 @@ namespace BulkyWeb.Models
         public int Id { get; set; }
         [Required]
         [Display(Name = "Category Name")]
+        [MaxLength(30)]
         public String Name { get; set; }
         [Display(Name = "Display Order")]
+        [Range(1,100)]
         public int DisplayOrder { get; set; }
     }
 }
